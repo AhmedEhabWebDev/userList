@@ -1,38 +1,56 @@
-.App {
+/* UserListStyles.css */
+
+.user-list-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 800px;
+  margin: auto;
+}
+
+.user-list-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-list-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 45%;
+  max-width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user-list-table th,
+.user-list-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
-.App-link {
-  color: #61dafb;
+.user-list-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-list-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-list-table tbody tr:hover {
+  background-color: #eaf5ff;
 }
